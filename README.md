@@ -1,6 +1,6 @@
 # LaunchBar Action: No-as-a-Service
 
-<img src="01.png" width="732"/>
+<img src="01.png" width="100%"/>
 
 Get a random, polite way to say "no" from [No-as-a-Service](https://github.com/hotheadhacker/no-as-a-service), right from LaunchBar.
 
