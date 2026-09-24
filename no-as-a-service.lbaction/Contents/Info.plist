@@ -37,6 +37,8 @@
 			<array>
 				<string>string</string>
 			</array>
+			<key>LBLiveFeedbackEnabled</key>
+			<true/>
 			<key>LBKeepWindowActive</key>
 			<true/>
 			<key>LBReturnsResult</key>

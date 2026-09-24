@@ -73,10 +73,17 @@ function run() {
   });
 }
 
+// Called on every keystroke (LBLiveFeedbackEnabled); never hits the API.
 function runWithString(query) {
+  var cache = loadCache();
   var q = (query || '').toLowerCase().trim();
-  if (!q) return run();
-  var hits = loadCache().filter(function (r) { return r.toLowerCase().indexOf(q) !== -1; });
+
+  if (!q) {
+    if (!cache.length) return [{ title: 'No cached excuses yet', subtitle: 'Open without text to fetch one' }];
+    return cache.map(function (r) { return toItem(r, 'Cached · Enter to copy'); });
+  }
+
+  var hits = cache.filter(function (r) { return r.toLowerCase().indexOf(q) !== -1; });
   if (!hits.length) {
     return [{
       title: 'No cached excuse matches "' + query + '"',

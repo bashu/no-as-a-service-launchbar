@@ -8,7 +8,7 @@ Get a random, polite way to say "no" from [No-as-a-Service](https://github.com/h
 
 - Type `no` and press `↩` to fetch a new rejection reason. It appears at the top of the list, followed by the reasons you've already seen (up to 20 are kept).
 - Press `↩` on any reason to copy it to the clipboard.
-- Press `␣` (space) and type to search the reasons you've already seen. Searching doesn't fetch new reasons.
+- Press `␣` (space) and type to search the reasons you've already seen. Results update as you type. Searching doesn't fetch new reasons.
 - If the API can't be reached, the action shows the saved reasons instead.
 
 ## Install & Update
