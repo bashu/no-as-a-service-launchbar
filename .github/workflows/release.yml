@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Zip no-as-a-service.lbaction
+        run: zip -r no-as-a-service.lbaction.zip no-as-a-service.lbaction -x '*.DS_Store'
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: no-as-a-service.lbaction.zip

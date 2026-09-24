@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>no-sign</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.github.bashu.LaunchBar.action.NaaS</string>
+	<key>CFBundleName</key>
+	<string>No-as-a-Service</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LBAbbreviation</key>
+	<string>no</string>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>Basil Shubin</string>
+		<key>LBEmail</key>
+		<string>basil.shubin@gmail.com</string>
+		<key>LBSummary</key>
+		<string>Random rejection reasons from No-as-a-Service.</string>
+		<key>LBWebsite</key>
+		<string>https://github.com/bashu/no-as-a-service-launchbar</string>
+		<key>LBUpdateURL</key>
+		<string>https://raw.githubusercontent.com/bashu/no-as-a-service-launchbar/main/no-as-a-service.lbaction/Contents/Info.plist</string>
+	</dict>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBScriptName</key>
+			<string>default.js</string>
+			<key>LBRequiresArgument</key>
+			<false/>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBReturnsResult</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
